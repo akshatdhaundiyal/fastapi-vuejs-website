@@ -1,0 +1,24 @@
+[project]
+name = "fastapi-vue-website"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "aiofiles>=24.1.0",
+    "alembic>=1.16.4",
+    "argon2-cffi>=25.1.0",
+    "bcrypt>=4.3.0",
+    "fastapi[all]>=0.116.1",
+    "passlib>=1.7.4",
+    "python-jose>=3.5.0",
+    "python-multipart>=0.0.20",
+    "sqlalchemy>=2.0.42",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "ruff>=0.12.10",
+]
+
+[tool.pytest.ini_options]
+pythonpath = "."
