@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends
 
-from src.db.database import get_db
-from src.routers.users import user_get, user_post
+from backend.src.db.database import get_db
+from backend.src.routers.users import user_get, user_post
 
 router = APIRouter(
     prefix="/users",

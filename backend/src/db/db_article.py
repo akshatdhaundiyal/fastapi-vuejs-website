@@ -1,8 +1,8 @@
 import datetime
 from sqlalchemy.orm import Session
 
-from src.db.models import DbArticle, DbVote
-from src.schemas.article_schema import ArticleBase, VoteBase
+from backend.src.db.models import DbArticle, DbVote
+from backend.src.schemas.article_schema import ArticleBase, VoteBase
 
 def create_article(db: Session,request: ArticleBase):
     """

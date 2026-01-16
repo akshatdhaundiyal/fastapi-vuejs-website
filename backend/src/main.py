@@ -1,9 +1,9 @@
 from fastapi import Depends, FastAPI
-from src.db.database import engine,get_db
-from src.routers.articles import articles
-from src.routers.users import user
-from src.db import models
-from src.utils.auth_service import authentication
+from backend.src.db.database import engine,get_db
+from backend.src.routers.articles import articles
+from backend.src.routers.users import user
+from backend.src.db import models
+from backend.src.utils.auth_service import authentication
 from fastapi.staticfiles import StaticFiles
 
 app = FastAPI(
@@ -23,4 +23,4 @@ def root():
 
 models.Base.metadata.create_all(engine)
 
-app.mount("/images", StaticFiles(directory="images"), name="images")
+app.mount("/images", StaticFiles(directory="backend/images"), name="images")

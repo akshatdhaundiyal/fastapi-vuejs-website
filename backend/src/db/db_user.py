@@ -1,8 +1,8 @@
 import datetime
 from sqlalchemy.orm import Session
-from src.db.models import DbUser
-from src.schemas.user_schema import UserBase, UserUpdate
-from src.utils.auth_service.hash import Hash
+from backend.src.db.models import DbUser
+from backend.src.schemas.user_schema import UserBase, UserUpdate
+from backend.src.utils.auth_service.hash import Hash
 from fastapi import HTTPException, status
 
 

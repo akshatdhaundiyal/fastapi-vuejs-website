@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
 
-from src.db.database import get_db
+from backend.src.db.database import get_db
 from sqlalchemy.orm import Session
-from src.db import db_article
-from src.schemas.article_schema import ArticleDisplay
+from backend.src.db import db_article
+from backend.src.schemas.article_schema import ArticleDisplay
 router = APIRouter()
 
 @router.get("/")

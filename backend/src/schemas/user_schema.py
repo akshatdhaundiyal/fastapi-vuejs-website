@@ -2,7 +2,7 @@ from operator import ge
 from typing import Optional
 from pydantic import BaseModel
 
-from src.utils.pydantic.generate_partial_model import generate_partial_model
+from backend.src.utils.pydantic.generate_partial_model import generate_partial_model
 
 class UserBase(BaseModel):
     username: str

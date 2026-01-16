@@ -11,7 +11,9 @@ class Settings(BaseSettings):
     algorithm: str
     access_token_expire_minutes: int
 
+    database_reference_path: str
+
     class Config:
-        env_file = ".env"
+        env_file = "backend/.env"
 
 settings = Settings()
